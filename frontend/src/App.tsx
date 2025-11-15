@@ -28,7 +28,7 @@ export default function App() {
         <DebugThemeToggle />
       </div>
       <AppProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio">
           <Suspense fallback={<></>}>
             <Routes>
               <Route path="/" element={<HomePage />}></Route>

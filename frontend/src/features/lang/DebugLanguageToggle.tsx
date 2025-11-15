@@ -16,7 +16,7 @@ export default function DebugLanguageToggle() {
       <Button onClick={() => i18n.changeLanguage("en")}>
         <img
           style={svgStyle}
-          src={IMAGES_PATH + "flags/uk.svg"}
+          src={"public/images/flags/uk.svg"}
           alt="UK Flag"
         />
         EN
