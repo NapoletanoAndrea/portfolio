@@ -1,0 +1,26 @@
+@theme {
+  --color-main: white;
+  --color-bg: white;
+  --color-bg-100: var(--color-neutral-100);
+  --color-bg-200: var(--color-neutral-200);
+  --color-text: black;
+
+  --spacing-container: 90rem;
+  --padding-container-x: 0.5rem;
+}
+
+@layer theme {
+  .dark {
+    --color-main: black;
+    --color-bg: black;
+    --color-bg-100: var(--color-neutral-900);
+    --color-bg-200: var(--color-neutral-800);
+    --color-text: white;
+  }
+}
+
+@variant md {
+  :root {
+    --padding-container-x: 1rem;
+  }
+}

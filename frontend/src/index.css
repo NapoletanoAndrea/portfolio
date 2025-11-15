@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "./styles/themes.css";
+@import "./styles/classes.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  color-scheme: light dark;
+  background-color: var(--color-bg);
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
