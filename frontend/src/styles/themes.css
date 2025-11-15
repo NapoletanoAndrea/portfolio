@@ -3,10 +3,18 @@
   --color-bg: white;
   --color-bg-100: var(--color-neutral-100);
   --color-bg-200: var(--color-neutral-200);
+  --color-bg-300: var(--color-neutral-300);
+  --color-bg-400: var(--color-neutral-400);
+  --color-bg-500: var(--color-neutral-500);
+  --color-bg-600: var(--color-neutral-600);
+  --color-bg-700: var(--color-neutral-700);
+  --color-bg-800: var(--color-neutral-800);
+  --color-bg-900: var(--color-neutral-900);
+
   --color-text: black;
 
-  --spacing-container: 90rem;
-  --padding-container-x: 0.5rem;
+  --spacing-container: 48rem;
+  --padding-container-x: 1rem;
 }
 
 @layer theme {
@@ -15,6 +23,14 @@
     --color-bg: black;
     --color-bg-100: var(--color-neutral-900);
     --color-bg-200: var(--color-neutral-800);
+    --color-bg-300: var(--color-neutral-700);
+    --color-bg-400: var(--color-neutral-600);
+    --color-bg-500: var(--color-neutral-500);
+    --color-bg-600: var(--color-neutral-400);
+    --color-bg-700: var(--color-neutral-300);
+    --color-bg-800: var(--color-neutral-200);
+    --color-bg-900: var(--color-neutral-100);
+    
     --color-text: white;
   }
 

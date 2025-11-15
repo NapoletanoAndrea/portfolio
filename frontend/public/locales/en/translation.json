@@ -1,9 +1,16 @@
 {
-  "common": { "welcome": "Welcome", "here": "here" },
+  "common": { "welcome": "Welcome", "here": "here", "all": "All" },
   "auth": {
     "no_account": "Don't have an account?",
     "login": "Login",
     "register": "Register",
     "have_account": "Already have an account?"
+  },
+  "hero": {
+    "p": "// I write code"
+  },
+  "projects":{
+    "name":"Calendar",
+    "description":"Calendar"
   }
 }

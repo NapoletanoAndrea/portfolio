@@ -1,7 +1,13 @@
-.btn {
-  @apply hover:bg-bg-200 flex cursor-pointer gap-2 rounded-lg border px-4 py-2 transition-colors duration-100;
-}
+@layer components {
+  .btn {
+    @apply hover:bg-bg-200 flex cursor-pointer gap-2 border px-4 py-2 transition-colors duration-100;
+  }
 
-.input {
-  @apply focus:bg-bg-200 max-w-full rounded-lg border px-4 py-2;
+  .btn.selected {
+    @apply bg-text text-bg;
+  }
+
+  .input {
+    @apply focus:bg-bg-200 max-w-full border px-4 py-2;
+  }
 }

@@ -13,7 +13,7 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState<Theme>(() => {
-    return (localStorage.getItem(THEME) as Theme) || "system";
+    return (localStorage.getItem(THEME) as Theme) || "dark";
   });
 
   // Apply theme classes

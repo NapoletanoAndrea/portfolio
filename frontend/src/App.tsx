@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AppProvider } from "./useApp";
+import { AppProvider } from "./AppContext";
 import { DebugThemeToggle } from "./features/theme/DebugThemeToggle";
 import DebugLanguageToggle from "./features/lang/DebugLanguageToggle";
 
@@ -9,8 +9,8 @@ import { DebugBreakpoints } from "./features/responsiveness/DebugBreakpoints";
 import LoadingPage from "./features/loading/LoadingPage";
 import { useTheme } from "./features/theme/useTheme";
 import NotFound from "./features/404/NotFound";
+import HomePage from "./features/home/HomePage";
 
-const HomePage = lazy(() => import("./features/home/HomePage"));
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
 const StyleSheetPage = lazy(
   () => import("./features/stylesheet/StyleSheetPage"),

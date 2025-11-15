@@ -27,3 +27,13 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 export interface TextAreaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
+
+export interface Project {
+  name: string;
+  description: string;
+  tags: string[];
+  longDescription: string;
+  category: ProjectCategory;
+}
+
+export type ProjectCategory = "Full Stack" | "Desktop" | "Game";

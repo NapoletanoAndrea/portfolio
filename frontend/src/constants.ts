@@ -4,3 +4,6 @@ export const USER = "user";
 export const THEME = "mytheme";
 
 export const IMAGES_PATH = "/images/";
+
+export const HOME_PATH = "/home"
+export const ABOUT_PATH = "/about"

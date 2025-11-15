@@ -1,12 +1,23 @@
 {
   "common": {
     "welcome": "Benvenuto",
-    "here": "qui"
+    "here": "qui",
+    "all": "Tutti"
   },
   "auth": {
     "no_account": "Non hai un account?",
     "login": "Accedi",
     "register": "Registrati",
     "have_account": "Hai già un account?"
+  },
+  "hero": {
+    "p": "// I write code"
+  },
+  "projects": {
+    "calendar": {
+      "name": "Calendario",
+      "description": "Applicazione full stack che permette ai dipendenti dell'azienda di creare task, con possibilità di aggiungere commenti e allegare file.",
+      "long_description": ""
+    }
   }
 }
