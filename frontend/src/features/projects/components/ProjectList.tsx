@@ -66,7 +66,7 @@ export default function ProjectList() {
   return (
     <>
       <div className="flex flex-col gap-12">
-        <h2 className="mx-auto">**Projects**</h2>
+        <h2 className="mx-auto">{`**${t("common.projects")}**`}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-4">
           <CategoryButton
             onClick={() => setSelectedCategory(undefined)}

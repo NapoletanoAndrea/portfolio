@@ -1,5 +1,10 @@
 {
-  "common": { "welcome": "Welcome", "here": "here", "all": "All" },
+  "common": {
+    "welcome": "Welcome",
+    "here": "here",
+    "all": "All",
+    "projects": "Projects"
+  },
   "auth": {
     "no_account": "Don't have an account?",
     "login": "Login",
@@ -9,8 +14,7 @@
   "hero": {
     "p": "// I write code"
   },
-  "projects":{
-    "name":"Calendar",
-    "description":"Calendar"
+  "projects": {
+    "calendar": {}
   }
 }

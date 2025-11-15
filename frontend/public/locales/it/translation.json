@@ -2,7 +2,8 @@
   "common": {
     "welcome": "Benvenuto",
     "here": "qui",
-    "all": "Tutti"
+    "all": "Tutti",
+    "projects": "Progetti"
   },
   "auth": {
     "no_account": "Non hai un account?",
