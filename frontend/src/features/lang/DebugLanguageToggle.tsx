@@ -13,7 +13,7 @@ export default function DebugLanguageToggle() {
 
   return (
     <div style={{ display: "flex", gap: ".5rem" }}>
-      <Button onClick={() => i18n.changeLanguage("en-GB")}>
+      <Button onClick={() => i18n.changeLanguage("en")}>
         <img
           style={svgStyle}
           src={IMAGES_PATH + "flags/uk.svg"}
@@ -21,7 +21,7 @@ export default function DebugLanguageToggle() {
         />
         EN
       </Button>
-      <Button onClick={() => i18n.changeLanguage("it-IT")}>
+      <Button onClick={() => i18n.changeLanguage("it")}>
         <img
           style={svgStyle}
           src={IMAGES_PATH + "flags/italy.svg"}
