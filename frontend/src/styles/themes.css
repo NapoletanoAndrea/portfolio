@@ -17,10 +17,10 @@
     --color-bg-200: var(--color-neutral-800);
     --color-text: white;
   }
-}
 
-@variant md {
-  :root {
-    --padding-container-x: 1rem;
+  @variant md {
+    :root {
+      --padding-container-x: 1rem;
+    }
   }
 }

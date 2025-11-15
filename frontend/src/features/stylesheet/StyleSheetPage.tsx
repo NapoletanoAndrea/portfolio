@@ -1,8 +1,8 @@
-import Container from "../components/layout/Container/Container";
-import PageWrapper from "../components/layout/PageWrapper/PageWrapper";
-import Button from "../components/ui/Button/Button";
-import Input from "../components/ui/Input/Input";
-import TextArea from "../components/ui/TextArea/TextArea";
+import Container from "../../components/layout/Container/Container";
+import PageWrapper from "../../components/layout/PageWrapper/PageWrapper";
+import Button from "../../components/ui/Button/Button";
+import Input from "../../components/ui/Input/Input";
+import TextArea from "../../components/ui/TextArea/TextArea";
 
 export default function StyleSheetPage() {
   return (

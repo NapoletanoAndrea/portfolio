@@ -1,5 +1,4 @@
 import { lazy, Suspense } from "react";
-import ProtectedRoute from "./features/auth/ProtectedRoute";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./useApp";
 import { DebugThemeToggle } from "./features/theme/DebugThemeToggle";
@@ -13,7 +12,9 @@ import NotFound from "./features/404/NotFound";
 
 const HomePage = lazy(() => import("./features/home/HomePage"));
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
-const StyleSheetPage = lazy(() => import("./styles/StyleSheetPage"));
+const StyleSheetPage = lazy(
+  () => import("./features/stylesheet/StyleSheetPage"),
+);
 const TestPage = lazy(() => import("./testing/TestPage"));
 
 export default function App() {
@@ -30,14 +31,7 @@ export default function App() {
         <BrowserRouter>
           <Suspense fallback={<></>}>
             <Routes>
-              <Route
-                path="/"
-                element={
-                  <ProtectedRoute>
-                    <HomePage />
-                  </ProtectedRoute>
-                }
-              ></Route>
+              <Route path="/" element={<HomePage />}></Route>
               <Route path="/login" element={<LoginPage />}></Route>
               <Route path="/styles" element={<StyleSheetPage />}></Route>
               <Route path="/test" element={<TestPage />}></Route>
