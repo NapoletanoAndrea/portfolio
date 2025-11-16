@@ -1,20 +1,24 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
-import common from "../../locales/en/common";
-import projects from "../../locales/en/projects";
+import commonEn from "../../locales/en/common";
+import projectsEn from "../../locales/en/projects";
+import commonIt from "../../locales/it/common";
+import projectsIt from "../../locales/it/projects";
 
 export const defaultNS = ["common"] as const;
 export const resources = {
   en: {
-    common,
-    projects,
+    common: commonEn,
+    projects: projectsEn,
+  },
+  it: {
+    common: commonIt,
+    projects: projectsIt,
   },
 } as const;
 
 i18n
-  .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
