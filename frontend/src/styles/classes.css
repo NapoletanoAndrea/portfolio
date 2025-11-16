@@ -12,6 +12,6 @@
   }
 
   .image-border {
-    @apply border-2 p-2
+    @apply border p-1 md:border-2 md:p-2;
   }
 }
