@@ -16,7 +16,7 @@ export default function ImageModal({
   return ReactDOM.createPortal(
     <>
       <div className="bg-bg fixed top-0 left-0 flex h-full w-full overflow-auto p-4">
-        <Button onClick={onClose} className="fixed top-4 right-4">
+        <Button onClick={onClose} className="fixed top-4 right-4 font-bold">
           X
         </Button>
         <div className="image-border m-auto max-w-500">
