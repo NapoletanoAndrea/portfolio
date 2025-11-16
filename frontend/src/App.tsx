@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { AppProvider } from "./AppContext";
 import { DebugThemeToggle } from "./features/theme/DebugThemeToggle";
 import DebugLanguageToggle from "./features/lang/DebugLanguageToggle";
@@ -10,7 +10,7 @@ import LoadingPage from "./features/loading/LoadingPage";
 import { useTheme } from "./features/theme/useTheme";
 import NotFound from "./features/404/NotFound";
 import HomePage from "./features/home/HomePage";
-import { HOME_PATH, PROJECTS_PATH, WORKING_PATH } from "./constants";
+import { HOME_PATH, PROJECTS_PATH } from "./constants";
 import CalendarProject from "./features/projects/CalendarProject";
 
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
@@ -30,7 +30,7 @@ export default function App() {
         <DebugThemeToggle />
       </div>
       <AppProvider>
-        <BrowserRouter basename={WORKING_PATH}>
+        <HashRouter>
           <Suspense fallback={<></>}>
             <Routes>
               <Route path={HOME_PATH} element={<HomePage />}></Route>
@@ -45,7 +45,7 @@ export default function App() {
               <Route path="/*" element={<NotFound />}></Route>
             </Routes>
           </Suspense>
-        </BrowserRouter>
+        </HashRouter>
       </AppProvider>
     </>
   );
