@@ -8,10 +8,17 @@ export default function Socials() {
       <Link
         title="Linkedin"
         to="https://www.linkedin.com/in/andrea-napoletano-43923b275/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <LinkedinSVG />
       </Link>
-      <Link title="Github" to="https://github.com/NapoletanoAndrea">
+      <Link
+        title="Github"
+        to="https://github.com/NapoletanoAndrea"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <GithubSVG />
       </Link>
     </div>

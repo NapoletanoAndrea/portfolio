@@ -10,4 +10,8 @@
   .input {
     @apply focus:bg-bg-200 max-w-full border px-4 py-2;
   }
+
+  .image-border {
+    @apply border-2 p-2
+  }
 }

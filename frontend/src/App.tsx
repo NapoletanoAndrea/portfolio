@@ -10,7 +10,8 @@ import LoadingPage from "./features/loading/LoadingPage";
 import { useTheme } from "./features/theme/useTheme";
 import NotFound from "./features/404/NotFound";
 import HomePage from "./features/home/HomePage";
-import { WORKING_PATH } from "./constants";
+import { HOME_PATH, PROJECTS_PATH, WORKING_PATH } from "./constants";
+import CalendarProject from "./features/projects/CalendarProject";
 
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
 const StyleSheetPage = lazy(
@@ -32,7 +33,11 @@ export default function App() {
         <BrowserRouter basename={WORKING_PATH}>
           <Suspense fallback={<></>}>
             <Routes>
-              <Route path="/" element={<HomePage />}></Route>
+              <Route path={HOME_PATH} element={<HomePage />}></Route>
+              <Route
+                path={`${PROJECTS_PATH}/calendar`}
+                element={<CalendarProject />}
+              ></Route>
               <Route path="/login" element={<LoginPage />}></Route>
               <Route path="/styles" element={<StyleSheetPage />}></Route>
               <Route path="/test" element={<TestPage />}></Route>

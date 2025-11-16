@@ -8,7 +8,6 @@ import type {
 import { StringUtils } from "../../../utils/StringUtils";
 import { useTranslation } from "react-i18next";
 import { useProjects } from "../../../AppContext";
-import { categoryColors } from "../projects";
 import { Link, type LinkProps } from "react-router-dom";
 import { PROJECTS_PATH } from "../../../constants";
 
@@ -30,7 +29,9 @@ const ProjectListItem = ({
   className,
   ...props
 }: ProjectListItemProps) => {
+  const { categoryColors } = useProjects();
   const catColor = categoryColors[project.category];
+
   return (
     <Link
       to={`${PROJECTS_PATH}/${project.path}`}
