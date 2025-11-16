@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import Container from "../../components/layout/Container/Container";
 import PageWrapper from "../../components/layout/PageWrapper/PageWrapper";
 import { IMAGES_PATH } from "../../constants";
@@ -8,7 +7,6 @@ import { useProject } from "./hooks/useProject";
 
 export default function CalendarProject() {
   const project = useProject();
-  const { t } = useTranslation("projects");
 
   return (
     <PageWrapper>
