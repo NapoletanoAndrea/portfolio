@@ -38,3 +38,8 @@ export interface Project {
 }
 
 export type ProjectCategory = "Full Stack" | "Desktop" | "Game";
+
+export interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}

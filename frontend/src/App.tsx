@@ -29,8 +29,8 @@ export default function App() {
         <DebugLanguageToggle />
         <DebugThemeToggle />
       </div>
-      <AppProvider>
-        <HashRouter>
+      <HashRouter>
+        <AppProvider>
           <Suspense fallback={<></>}>
             <Routes>
               <Route path={HOME_PATH} element={<HomePage />}></Route>
@@ -45,8 +45,8 @@ export default function App() {
               <Route path="/*" element={<NotFound />}></Route>
             </Routes>
           </Suspense>
-        </HashRouter>
-      </AppProvider>
+        </AppProvider>
+      </HashRouter>
     </>
   );
 }

@@ -1,6 +1,9 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Project, ProjectCategory } from "./@types/types";
+import { StringUtils } from "./utils/StringUtils";
+import { useLocation } from "react-router-dom";
+import ImageModal from "./components/ui/ImageModal/ImageModal";
 
 const AppContext = createContext<any>({});
 
@@ -42,11 +45,41 @@ export const AppProvider = (props: Props) => {
     [projectCategories.game]: "cyan",
   };
 
+  const [mainModal, setMainModal] = useState<string>("");
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    if (!StringUtils.isNullOrEmpty(mainModal)) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mainModal]);
+
+  useEffect(() => {
+    setMainModal("");
+  }, [pathname]);
+
   return (
     <AppContext.Provider
-      value={{ projectCategories, projects, categoryColors }}
+      value={{
+        mainModal,
+        setMainModal,
+        projectCategories,
+        projects,
+        categoryColors,
+      }}
     >
       {props.children}
+      <ImageModal
+        isOpen={mainModal !== ""}
+        onClose={() => setMainModal("")}
+        src={mainModal}
+      />
     </AppContext.Provider>
   );
 };

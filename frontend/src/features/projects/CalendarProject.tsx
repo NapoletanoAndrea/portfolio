@@ -1,6 +1,7 @@
 import Container from "../../components/layout/Container/Container";
 import PageWrapper from "../../components/layout/PageWrapper/PageWrapper";
 import BackButton from "../../components/ui/BackButton/BackButton";
+import ImageButton from "../../components/ui/ImageButton/ImageButton";
 import { IMAGES_PATH } from "../../constants";
 import Navbar from "../../nav/Navbar";
 import NewLineTrans from "../lang/components/NewLineTrans";
@@ -15,9 +16,9 @@ export default function CalendarProject() {
         <Navbar />
         <Container className="flex flex-col gap-8">
           <h1 className="self-center">{project.name}</h1>
-          <div className="image-border">
-            <img src={`${IMAGES_PATH}calendar/Calendario.png`}></img>
-          </div>
+          <ImageButton
+            src={`${IMAGES_PATH}calendar/dashboard.png`}
+          ></ImageButton>
           <div>
             <p className="whitespace-pre-line">
               <NewLineTrans
