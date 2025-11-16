@@ -1,4 +1,4 @@
-import type { PathParams, QueryParams } from "../types/types";
+import type { PathParams, QueryParams } from "../@types/types";
 import { ArrayUtils } from "./ArrayUtils";
 
 export class QueryUtils {

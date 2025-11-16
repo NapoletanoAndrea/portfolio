@@ -1,6 +1,6 @@
 import axios, { type AxiosInstance, type AxiosRequestConfig } from "axios";
 import { ACCESS_TOKEN } from "../constants";
-import type { ApiFuncParams } from "../types/types";
+import type { ApiFuncParams } from "../@types/types";
 import i18n from "../features/lang/i18n";
 import { tryRefreshAccessToken } from "../features/auth/authUtils";
 import { QueryUtils } from "../utils/QueryUtils";

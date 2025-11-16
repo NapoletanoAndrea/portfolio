@@ -4,11 +4,13 @@ import type {
   ButtonProps,
   Project,
   ProjectCategory,
-} from "../../../types/types";
+} from "../../../@types/types";
 import { StringUtils } from "../../../utils/StringUtils";
 import { useTranslation } from "react-i18next";
 import { useProjects } from "../../../AppContext";
 import { categoryColors } from "../projects";
+import { Link, type LinkProps } from "react-router-dom";
+import { PROJECTS_PATH } from "../../../constants";
 
 const CategoryButton = ({ className, ...props }: ButtonProps) => {
   return (
@@ -19,7 +21,7 @@ const CategoryButton = ({ className, ...props }: ButtonProps) => {
   );
 };
 
-interface ProjectListItemProps extends ButtonProps {
+interface ProjectListItemProps extends Omit<LinkProps, "to"> {
   project: Project;
 }
 
@@ -28,14 +30,14 @@ const ProjectListItem = ({
   className,
   ...props
 }: ProjectListItemProps) => {
-  const { t } = useTranslation();
   const catColor = categoryColors[project.category];
   return (
-    <Button
-      className={`relative flex flex-col items-start gap-2 px-6 py-4 ${className}`}
+    <Link
+      to={`${PROJECTS_PATH}/${project.path}`}
+      className={`btn relative flex flex-col items-start gap-2 px-6 py-4 ${className}`}
       {...props}
     >
-      <h3>{t("projects.calendar.name")}</h3>
+      <h3>{project.name}</h3>
       <p className="text-start">{project.description}</p>
       <div className="flex gap-3">
         {project.tags.map((tag: string) => (
@@ -50,7 +52,7 @@ const ProjectListItem = ({
           {project.category}
         </div>
       </div>
-    </Button>
+    </Link>
   );
 };
 
@@ -66,7 +68,7 @@ export default function ProjectList() {
   return (
     <>
       <div className="flex flex-col gap-12">
-        <h2 className="mx-auto">{`**${t("common.projects")}**`}</h2>
+        <h2 className="mx-auto">{`**${t("projects")}**`}</h2>
         <div className="grid grid-cols-2 sm:grid-cols-4">
           <CategoryButton
             onClick={() => setSelectedCategory(undefined)}
@@ -74,7 +76,7 @@ export default function ProjectList() {
               StringUtils.isNullOrEmpty(selectedCategory) ? "selected" : ""
             }
           >
-            {t("common.all")}
+            {t("all")}
           </CategoryButton>
           {Object.values(projectCategories).map((cat) => {
             return (

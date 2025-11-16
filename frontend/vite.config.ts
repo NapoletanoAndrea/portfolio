@@ -11,5 +11,5 @@ export default defineConfig({
       "612d-212-124-181-28.ngrok-free.app", // ← your ngrok URL
     ],
   },
-  base: "/portfolio/",
+  base: "/portfolio",
 });

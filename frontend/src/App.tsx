@@ -10,6 +10,7 @@ import LoadingPage from "./features/loading/LoadingPage";
 import { useTheme } from "./features/theme/useTheme";
 import NotFound from "./features/404/NotFound";
 import HomePage from "./features/home/HomePage";
+import { WORKING_PATH } from "./constants";
 
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
 const StyleSheetPage = lazy(
@@ -22,13 +23,13 @@ export default function App() {
 
   return (
     <>
-      <div className="fixed right-5 bottom-5 flex flex-col items-end gap-3">
+      <div className="fixed right-5 bottom-5 z-10 flex flex-col items-end gap-3">
         <DebugBreakpoints />
         <DebugLanguageToggle />
         <DebugThemeToggle />
       </div>
       <AppProvider>
-        <BrowserRouter basename="/portfolio">
+        <BrowserRouter basename={WORKING_PATH}>
           <Suspense fallback={<></>}>
             <Routes>
               <Route path="/" element={<HomePage />}></Route>

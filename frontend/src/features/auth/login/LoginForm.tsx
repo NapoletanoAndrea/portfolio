@@ -32,7 +32,7 @@ export default function LoginForm({ path = "/" }) {
   return (
     <div className="">
       <form className="flex flex-col items-center gap-4">
-        <h1 className="text-3xl font-bold">{t("common.welcome")}</h1>
+        <h1 className="text-3xl font-bold">{t("welcome")}</h1>
         <Input
           className="w-80"
           placeholder="Username"
@@ -59,7 +59,7 @@ export default function LoginForm({ path = "/" }) {
         <div>
           {t("auth.no_account") + " "}
           <Link to="/register" className="hover:underline">
-            {t("auth.register") + " " + t("common.here")}
+            {t("auth.register") + " " + t("here")}
           </Link>
         </div>
       </form>

@@ -29,6 +29,7 @@ export interface TextAreaProps
   extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
 
 export interface Project {
+  path: string;
   name: string;
   description: string;
   tags: string[];

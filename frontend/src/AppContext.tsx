@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 import { useTranslation } from "react-i18next";
-import type { Project, ProjectCategory } from "./types/types";
+import type { Project, ProjectCategory } from "./@types/types";
 
 const AppContext = createContext<any>({});
 
@@ -9,7 +9,7 @@ interface Props {
 }
 
 export const AppProvider = (props: Props) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["projects"]);
 
   const projectCategories: Record<string, ProjectCategory> = {
     fullStack: "Full Stack",
@@ -19,10 +19,11 @@ export const AppProvider = (props: Props) => {
 
   const projects: Project[] = [
     {
-      name: t("projects.calendar.name"),
-      description: t("projects.calendar.description"),
+      path: "calendar",
+      name: t("projects:calendar.name"),
+      description: t("projects:calendar.description"),
       tags: ["Django", "React", "Postgresql", "JWT"],
-      longDescription: t("projects.calendar.long_description"),
+      longDescription: t("projects:calendar.long_description"),
       category: projectCategories.fullStack,
     },
   ];
