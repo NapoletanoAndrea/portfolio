@@ -12,12 +12,23 @@ const projects = {
     Il progetto presenta le seguenti features:
     
     `,
-
     features: `* Autenticazione con token JWT<br><br>
     * Autenticazione 2fa<br><br>
     * Database relazionale Postgres<br><br>
     * Query ottimizzate attraverso pagination e filtri<br><br>
     * Possibilità di filtrare e scaricare le informazioni filtrate in formato Excel`,
+  },
+  autodotnet: {
+    name: "Automazione .NET",
+    description: `Applicazione .NET adibita alla lavorazione di un tipo di file Excel ampio e complesso interno aziendale.`,
+    long_description: "",
+    features: `
+    * Autenticazione con token JWT
+    * Autenticazione 2fa
+    * Database relazionale Postgres
+    * Query ottimizzate attraverso pagination e filtri
+    * Possibilità di filtrare e scaricare le informazioni filtrate in formato Excel
+    * `,
   },
 } as const;
 

@@ -1,5 +1,6 @@
 const common = {
   welcome: "Benvenuto",
+  back: "Indietro",
   here: "qui",
   all: "Tutti",
   projects: "Progetti",
@@ -11,7 +12,7 @@ const common = {
   },
   hero: {
     p: "// I write code",
-  }
+  },
 } as const;
 
 export default common;

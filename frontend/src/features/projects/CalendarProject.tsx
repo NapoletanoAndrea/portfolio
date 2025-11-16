@@ -1,5 +1,6 @@
 import Container from "../../components/layout/Container/Container";
 import PageWrapper from "../../components/layout/PageWrapper/PageWrapper";
+import BackButton from "../../components/ui/BackButton/BackButton";
 import { IMAGES_PATH } from "../../constants";
 import Navbar from "../../nav/Navbar";
 import NewLineTrans from "../lang/components/NewLineTrans";
@@ -31,6 +32,7 @@ export default function CalendarProject() {
           <div className="image-border">
             <img src={`${IMAGES_PATH}calendar/edit.png`}></img>
           </div>
+          <BackButton className="self-center" />
         </Container>
       </div>
     </PageWrapper>

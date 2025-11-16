@@ -1,5 +1,6 @@
 const common = {
   welcome: "Welcome",
+  back: "Back",
   here: "here",
   all: "All",
   projects: "Projects",

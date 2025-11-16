@@ -26,6 +26,14 @@ export const AppProvider = (props: Props) => {
       longDescription: t("projects:calendar.long_description"),
       category: projectCategories.fullStack,
     },
+    {
+      path: "autodotnet",
+      name: t("projects:autodotnet.name"),
+      description: t("projects:autodotnet.description"),
+      tags: [".NET", "C#", "Avalonia", "Python"],
+      longDescription: t("projects:autodotnet.long_description"),
+      category: projectCategories.desktop,
+    },
   ];
 
   const categoryColors: Record<ProjectCategory, string> = {
