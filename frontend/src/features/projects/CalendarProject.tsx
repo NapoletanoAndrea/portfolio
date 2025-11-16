@@ -30,9 +30,9 @@ export default function CalendarProject() {
               <NewLineTrans ns={"projects"} i18nKey={"calendar.features"} />
             </p>
           </div>
-          <div className="image-border">
-            <img src={`${IMAGES_PATH}calendar/edit.png`}></img>
-          </div>
+          <ImageButton
+            src={`${IMAGES_PATH}calendar/edit.png`}
+          ></ImageButton>
           <BackButton className="self-center" />
         </Container>
       </div>
