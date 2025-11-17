@@ -96,7 +96,7 @@ export default function ProjectList() {
             (item) => !selectedCategory || item.category === selectedCategory,
           )
           .map((project) => (
-            <ProjectListItem key={project.name} project={project} />
+            <ProjectListItem key={project.path} project={project} />
           ))}
         <div className="flex flex-col gap-5"></div>
       </div>

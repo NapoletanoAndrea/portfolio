@@ -33,9 +33,25 @@ export const AppProvider = (props: Props) => {
       path: "autodotnet",
       name: t("projects:autodotnet.name"),
       description: t("projects:autodotnet.description"),
-      tags: [".NET", "C#", "Avalonia", "Python"],
+      tags: [".NET", "C#", "EPPlus", "Avalonia", "Python"],
       longDescription: t("projects:autodotnet.long_description"),
       category: projectCategories.desktop,
+    },
+    {
+      path: "ordermanager",
+      name: t("projects:ordermanager.name"),
+      description: t("projects:ordermanager.description"),
+      tags: ["Django", "React", "Postgresql", "JWT", "Capacitor"],
+      longDescription: t("projects:ordermanager.long_description"),
+      category: projectCategories.fullStack,
+    },
+    {
+      path: "webmanual",
+      name: t("projects:webmanual.name"),
+      description: t("projects:webmanual.description"),
+      tags: ["Django", "React", "Postgresql", "JWT"],
+      longDescription: t("projects:webmanual.long_description"),
+      category: projectCategories.fullStack,
     },
   ];
 

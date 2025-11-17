@@ -14,4 +14,8 @@
   .image-border {
     @apply border p-1 md:border-2 md:p-2;
   }
+
+  .project-scroller {
+    @apply flex flex-col gap-8 pb-24;
+  }
 }

@@ -12,6 +12,8 @@ import NotFound from "./features/404/NotFound";
 import HomePage from "./features/home/HomePage";
 import { HOME_PATH, PROJECTS_PATH } from "./constants";
 import CalendarProject from "./features/projects/CalendarProject";
+import DotnetAutoProject from "./features/projects/DotnetAutoProject";
+import OrderManagerProject from "./features/projects/OrderManagerProject";
 
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
 const StyleSheetPage = lazy(
@@ -37,6 +39,14 @@ export default function App() {
               <Route
                 path={`${PROJECTS_PATH}/calendar`}
                 element={<CalendarProject />}
+              ></Route>
+              <Route
+                path={`${PROJECTS_PATH}/autodotnet`}
+                element={<DotnetAutoProject />}
+              ></Route>
+              <Route
+                path={`${PROJECTS_PATH}/ordermanager`}
+                element={<OrderManagerProject />}
               ></Route>
               <Route path="/login" element={<LoginPage />}></Route>
               <Route path="/styles" element={<StyleSheetPage />}></Route>

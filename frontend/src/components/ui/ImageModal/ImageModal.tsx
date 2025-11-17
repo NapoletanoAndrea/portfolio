@@ -19,7 +19,7 @@ export default function ImageModal({
         <Button onClick={onClose} className="fixed top-4 right-4 font-bold">
           X
         </Button>
-        <div className="image-border m-auto max-w-500">
+        <div className="image-border m-auto max-w-425">
           <img className="" src={src} />
         </div>
       </div>
