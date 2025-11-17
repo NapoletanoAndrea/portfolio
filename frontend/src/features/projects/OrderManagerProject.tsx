@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import ImageButton from "../../components/ui/ImageButton/ImageButton";
 import { IMAGES_PATH } from "../../constants";
 import NewLineTrans from "../lang/components/NewLineTrans";
@@ -7,7 +7,7 @@ import ProjectContainer from "./components/ProjectContainer";
 
 export default function OrderManagerProject() {
   const project = useProject();
-  const { t } = useTranslation("projects");
+//   const { t } = useTranslation("projects");
 
   return (
     <ProjectContainer>
