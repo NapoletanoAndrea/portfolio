@@ -44,12 +44,11 @@ const projects = {
   },
   webmanual: {
     name: "Manuale Web",
-    description: `Applicazione web adibita alla gestione degli ordini da parte degli utenti, i quali possono registrarsi attraverso indirizzo email, la registrazione deve essere approvata da amministratori.`,
-    long_description: `Applicazione commissionatami da un'azienda esterna, il software deve permettere ad utenti esterni di registrarsi attraverso indirizzo email, una volta fatto devono ricevere l'approvazione degli amministratori prima di poter fare il login.
+    description: `Manuale online che istruisce i lavoratori dell'azienda a utilizzare il software proprietario di controllo degli ascensori, il sito dispone di searchbar e immagini interattive.`,
+    long_description: `Manuale con pagine completamente editabili dagli amministratori attraverso il database di Django.
     
-    L'app permette di compilare dei form attraverso i quali potranno inviare ordini direttamente all'azienda, l'azienda desidera mantenere segretezza su come questi ordini vergono fatti, motivo per il quale la registrazione deve essere approvata e per il quale non posso approfondire il funzionamento di questa applicazione.
-    
-    L'applicazione è multilingua grazie a react-i18n e a django-translations ed è anche disponibile come app Android grazie a Capacitor (e presto anche iOS).`,
+    I pulsanti rossi sono posizionati attraverso coordinate relative all'immagine nel database, e sono modificabili attraverso il frontend se loggati come amministratore semplicemente facendo drag and drop.`,
+    search:`Barra di ricerca.`
   },
 } as const;
 

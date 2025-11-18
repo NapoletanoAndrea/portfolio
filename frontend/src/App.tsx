@@ -14,6 +14,7 @@ import { HOME_PATH, PROJECTS_PATH } from "./constants";
 import CalendarProject from "./features/projects/CalendarProject";
 import DotnetAutoProject from "./features/projects/DotnetAutoProject";
 import OrderManagerProject from "./features/projects/OrderManagerProject";
+import ManualProject from "./features/projects/ManualProject";
 
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
 const StyleSheetPage = lazy(
@@ -47,6 +48,10 @@ export default function App() {
               <Route
                 path={`${PROJECTS_PATH}/ordermanager`}
                 element={<OrderManagerProject />}
+              ></Route>
+              <Route
+                path={`${PROJECTS_PATH}/webmanual`}
+                element={<ManualProject />}
               ></Route>
               <Route path="/login" element={<LoginPage />}></Route>
               <Route path="/styles" element={<StyleSheetPage />}></Route>

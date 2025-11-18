@@ -5,7 +5,7 @@ export default function ImageButton({ src }: { src: string }) {
 
   return (
     <div
-      className="image-border cursor-pointer"
+      className="image-border flex cursor-pointer justify-center"
       onClick={() => setMainModal(src)}
     >
       <img src={src}></img>
