@@ -48,7 +48,21 @@ const projects = {
     long_description: `Manuale con pagine completamente editabili dagli amministratori attraverso il database di Django.
     
     I pulsanti rossi sono posizionati attraverso coordinate relative all'immagine nel database, e sono modificabili attraverso il frontend se loggati come amministratore semplicemente facendo drag and drop.`,
-    search:`Barra di ricerca.`
+    search: `Barra di ricerca.`,
+  },
+  autopython: {
+    name: "Automazione Python",
+    description: `Serie di script e piccoli programmi scritti in Python adibiti all'automatizzazione di file Excel aziendali, inclusa lettura di file pdf.`,
+    long_description: `Questo progetto include una serie di piccoli programmi sviluppati in Python per automatizzare alcuni file Excel aziendiali.
+    
+    La maggior parte dellea automazioni sono fatte utilizzando openpyxl, sfruttando ogni tipo di funzionalità, dallo styling al merge delle celle.
+    
+    Le UI sono state realizzate principalmente con Tkinter e PyQT6.`,
+  },
+  bedtime_stories: {
+    name: "Bedtime Stories",
+    description: `Piccolo videgioco sviluppato su Unity durante i miei anni in accademia assieme ad un gruppo di altri studenti, tra cui io ero l'unico programmatore, date un'occhiata se vi va. :)`,
+    long_description: `Essendo l'unico programmatore del progetto, ho implementato praticamente ogni meccanica, dal Character Controller all'IA dei nemici e al sistema di dialogo. Ho creato alcuni shader, incluso quello per l'oscurità, e ho realizzato alcuni strumenti per l'ottimizzazione delle tile.`,
   },
 } as const;
 

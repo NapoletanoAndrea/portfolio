@@ -18,7 +18,7 @@ const NavLink = ({ to, className, ...props }: LinkProps) => {
 export default function Navbar() {
   return (
     <Container>
-      <div className="flex w-full items-center justify-between pt-8">
+      <div className="flex w-full items-center justify-between my-8">
         <div className="flex gap-4">
           <NavLink to={HOME_PATH}>Home</NavLink>
           <NavLink to={ABOUT_PATH}>About me</NavLink>

@@ -10,8 +10,8 @@ export default function ProjectContainer({
 }) {
   return (
     <PageWrapper>
+      <Navbar />
       <Container className="project-scroller">
-        <Navbar />
         {children}
         <BackButton className="self-center" />
       </Container>

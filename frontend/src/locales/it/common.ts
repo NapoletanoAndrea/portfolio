@@ -13,6 +13,9 @@ const common = {
   hero: {
     p: "// I write code",
   },
+  about: {
+    me: `Hi. I'm Andrea, 24, i like coding, technology and videogames.`,
+  },
 } as const;
 
 export default common;

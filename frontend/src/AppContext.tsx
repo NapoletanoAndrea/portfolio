@@ -53,6 +53,22 @@ export const AppProvider = (props: Props) => {
       longDescription: t("projects:webmanual.long_description"),
       category: projectCategories.fullStack,
     },
+    {
+      path: "autopython",
+      name: t("projects:autopython.name"),
+      description: t("projects:autopython.description"),
+      tags: ["Python", "Openpyxl", "Pandas", "Pymupdf", "Tkinter", "PyQT6"],
+      longDescription: t("projects:autopython.long_description"),
+      category: projectCategories.desktop,
+    },
+    {
+      path: "bedtime_stories",
+      name: t("projects:bedtime_stories.name"),
+      description: t("projects:bedtime_stories.description"),
+      tags: ["Unity", "C#"],
+      longDescription: t("projects:bedtime_stories.long_description"),
+      category: projectCategories.game,
+    },
   ];
 
   const categoryColors: Record<ProjectCategory, string> = {

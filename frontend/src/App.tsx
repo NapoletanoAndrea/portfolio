@@ -15,6 +15,9 @@ import CalendarProject from "./features/projects/CalendarProject";
 import DotnetAutoProject from "./features/projects/DotnetAutoProject";
 import OrderManagerProject from "./features/projects/OrderManagerProject";
 import ManualProject from "./features/projects/ManualProject";
+import AutoPythonProject from "./features/projects/AutoPythonProject";
+import BedtimeStoriesProject from "./features/projects/BedtimeStoriesProject";
+import AboutPage from "./features/about/AboutPage";
 
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
 const StyleSheetPage = lazy(
@@ -53,6 +56,15 @@ export default function App() {
                 path={`${PROJECTS_PATH}/webmanual`}
                 element={<ManualProject />}
               ></Route>
+              <Route
+                path={`${PROJECTS_PATH}/autopython`}
+                element={<AutoPythonProject />}
+              ></Route>
+              <Route
+                path={`${PROJECTS_PATH}/bedtime_stories`}
+                element={<BedtimeStoriesProject />}
+              ></Route>
+              <Route path="/about" element={<AboutPage />}></Route>
               <Route path="/login" element={<LoginPage />}></Route>
               <Route path="/styles" element={<StyleSheetPage />}></Route>
               <Route path="/test" element={<TestPage />}></Route>
