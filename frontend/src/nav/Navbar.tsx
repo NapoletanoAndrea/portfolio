@@ -49,7 +49,7 @@ export default function Navbar() {
           <Socials />
         </div>
       </div>
-      <div className="flex gap-4 sm:hidden self-end">
+      <div className="flex gap-4 sm:hidden self-end mt-4">
         <button
           className="cursor-pointer"
           onClick={() => switchToOppositeTheme()}
