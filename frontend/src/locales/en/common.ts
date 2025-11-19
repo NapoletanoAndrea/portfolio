@@ -18,7 +18,7 @@ const common = {
     education: "Education",
     it_diploma: "IT Diploma",
     game_programming_course: "Game Programming Course",
-    work_experience: "Esperienza di lavoro",
+    work_experience: "Work experience",
     cmt_date: "January 2025 - Presente",
     cmt_work_experience: `* Full Stack Development
     * Dekstop Development - Python & .NET`,

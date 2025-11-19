@@ -23,7 +23,7 @@ export default function Navbar() {
   const { i18n } = useTranslation();
 
   return (
-    <Container className="flex flex-col my-8">
+    <Container className="my-8 flex flex-col">
       <div className="flex w-full items-center justify-between">
         <div className="flex gap-4">
           <NavLink to={HOME_PATH}>Home</NavLink>
@@ -35,7 +35,7 @@ export default function Navbar() {
               className="cursor-pointer"
               onClick={() => switchToOppositeTheme()}
             >
-              <Sun className="text-2xl font-bold" />
+              <Sun className="icon-hover text-2xl font-bold" />
             </button>
             <button
               className="mr-4 cursor-pointer text-2xl font-bold"
@@ -49,12 +49,12 @@ export default function Navbar() {
           <Socials />
         </div>
       </div>
-      <div className="flex gap-4 sm:hidden self-end mt-4">
+      <div className="mt-4 flex gap-4 self-end sm:hidden">
         <button
           className="cursor-pointer"
           onClick={() => switchToOppositeTheme()}
         >
-          <Sun className="text-2xl font-bold" />
+          <Sun className="icon-hover text-2xl font-bold" />
         </button>
         <button
           className="cursor-pointer text-2xl font-bold"

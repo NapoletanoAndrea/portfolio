@@ -1,72 +1,69 @@
 const projects = {
   calendar: {
-    name: "Calendario",
-    description: `Applicazione full stack che permette agli utenti di creare task,
-      con possibilità di aggiungere commenti, allegare file e segnare il tempo lavorato
-      su un calendario. Tutti i dati sono scaricabili in formato Excel.`,
-
-    long_description: `L'app Calendario è più un Task Manager che altro, permette agli utenti di creare Task con categorie e campi molto specifici all'azienda, cosa che non sarebbe stata possibile con strumenti già preesistenti.
-
-    Il backend è stato realizzato con Django e il frontend con React.
-
-    Il progetto presenta le seguenti features:
+    name: `Calendar`,
+    description: `Full-stack application that allows users to create tasks, with the ability to add comments, attach files, and track worked time on a calendar. All data can be downloaded in Excel format.`,
+    long_description: `The Calendar app is more of a Task Manager than anything else; it allows users to create Tasks with categories and fields that are highly specific to the company, something that would not have been possible with existing tools.
     
+    The backend was built with Django and the frontend with React. The project includes the following features:
+
     `,
-    features: `* Autenticazione con token JWT<br><br>
-    * Autenticazione 2fa<br><br>
-    * Database relazionale Postgres<br><br>
-    * Query ottimizzate attraverso pagination e filtri<br><br>
-    * Possibilità di filtrare e scaricare le informazioni filtrate in formato Excel`,
+    features:
+      `* Authentication with JWT tokens<br><br>` +
+      `* 2FA authentication<br><br>` +
+      `* Relational Postgres database<br><br>` +
+      `* Optimized queries through pagination and filters<br><br>` +
+      `* Ability to filter and download filtered information in Excel format`,
   },
+
   autodotnet: {
-    name: "Automazione .NET",
-    description: `Applicazione .NET adibita alla lavorazione di un tipo di file Excel ampio e complesso interno aziendale.`,
-    long_description: `Applicazione Desktop realizzata al fine di rispondere alla necessità di gestire un tipo di file Excel particolarmente complesso e pesante, allegerisce il processo di compilazione agli operativi permettendo di automatizzare alcuni passaggi che non richiedono necessariamente l'intervento di un essere umano.
+    name: `Automation .NET`,
+    description: `A .NET application designed to process a large and complex internal company Excel file.`,
+    long_description: `Desktop application created to meet the need of handling a particularly complex and heavy Excel file. It lightens the compilation process for operators by automating certain steps that do not require human intervention.
+      
+      Until now, all programs I had built to automate Excel file processing were written in Python using openpyxl; however, this file proved too heavy for it and required additional features, especially for formulas.
 
-    Finora tutti i programmi che avevo realizzato per automatizzare la compilazione di file Excel erano scritti in Python utilizzando openpyxl, tuttavia questo file si è dimostrato troppo pesante per esso e richiedeva feature aggiuntive, specialmente per le formule.
-
-    C# con EPPlus ha risolto tutti i miei problemi, compila molto più velocemente e l'integrazinoe con le formule e la formattazione è di gran lunga superiore.
-
-    Per la lettura di file pdf che è necessaria per eseguire alcune operazioni, non avendo trovato librerie gratuite soddisfacenti per leggere pdf  per .NET, ho optato per l'utilizzo di Python con pymupdf che poi salva il risultato in un file json che in seguito vado a leggere con la parte .NET del progetto.
-    
-    La UI è stata realizzata con Avalonia utilizzando il pattern MVVM.`,
-    new_file: `Il software permette di creare il file da zero.`,
-    load_file: `O di caricarlo da un file preesistente.`,
+      C# with EPPlus solved all my problems: it processes much faster, and integration with formulas and formatting is far superior.
+      
+      For reading PDF files, which is necessary for some operations, since I could not find free .NET libraries that satisfied my needs, I opted to use Python with pymupdf, which then saves the result in a JSON file that I later read from the .NET side of the project.
+      
+      The UI was built with Avalonia using the MVVM pattern.`,
+    new_file: `The software allows creating the file from scratch.`,
+    load_file: `Or loading it from an existing file.`,
   },
+
   ordermanager: {
-    name: "Gestore Ordini",
-    description: `Applicazione web adibita alla gestione degli ordini da parte degli utenti, i quali possono registrarsi attraverso indirizzo email, la registrazione deve essere approvata da amministratori.`,
-    long_description: `Applicazione commissionatami da un'azienda esterna, il software deve permettere ad utenti esterni di registrarsi attraverso indirizzo email, una volta fatto devono ricevere l'approvazione degli amministratori prima di poter fare il login.
-    
-    L'app permette di compilare dei form attraverso i quali potranno inviare ordini direttamente all'azienda, l'azienda desidera mantenere segretezza su come questi ordini vergono fatti, motivo per il quale la registrazione deve essere approvata e per il quale non posso approfondire il funzionamento di questa applicazione.
-    
-    L'applicazione è multilingua grazie a react-i18n e a django-translations ed è anche disponibile come app Android grazie a Capacitor (e presto anche iOS).`,
+    name: `Order Manager`,
+    description: `Web application dedicated to order management by users, who can register using an email address; registration must be approved by administrators.`,
+    long_description: `Application commissioned by an external company. The software must allow external users to register via email; once done, they must receive administrator approval before being able to log in. 
+      
+      The app allows users to fill out forms through which they can send orders directly to the company. The company wants to maintain secrecy about how these orders are made, which is why registration must be approved and why I cannot go into detail about the functioning of this application. 
+      
+      The application is multilingual thanks to react-i18n and django-translations, and it is also available as an Android app thanks to Capacitor (and soon iOS).`,
   },
+
   webmanual: {
-    name: "Manuale Web",
-    description: `Manuale online che istruisce i lavoratori dell'azienda a utilizzare il software proprietario di controllo degli ascensori, il sito dispone di searchbar e immagini interattive.`,
-    long_description: `Manuale con pagine completamente editabili dagli amministratori attraverso il database di Django.
-    
-    I pulsanti rossi sono posizionati attraverso coordinate relative all'immagine nel database, e sono modificabili attraverso il frontend se loggati come amministratore semplicemente facendo drag and drop.`,
-    search: `Barra di ricerca.`,
+    name: `Web Manual`,
+    description: `Online manual that instructs company workers on how to use the proprietary elevator control software; the site includes a search bar and interactive images.`,
+    long_description: `Manual with pages fully editable by administrators through the Django database.
+      
+    The red buttons are positioned using coordinates relative to the image in the database, and can be modified from the frontend when logged in as an administrator simply by using drag and drop.`,
+    search: `Search bar.`,
   },
+
   autopython: {
-    name: "Automazione Python",
-    description: `Serie di script e piccoli programmi scritti in Python adibiti all'automatizzazione di file Excel aziendali, inclusa lettura di file pdf.`,
-    long_description: `Questo progetto include una serie di piccoli programmi sviluppati in Python per automatizzare alcuni file Excel aziendiali.
-    
-    La maggior parte dellea automazioni sono fatte utilizzando openpyxl, sfruttando ogni tipo di funzionalità, dallo styling al merge delle celle.
-    
-    Le UI sono state realizzate principalmente con Tkinter e PyQT6.`,
+    name: `Python Automation`,
+    description: `Series of scripts and small programs written in Python aimed at automating company Excel files, including PDF reading.`,
+    long_description: `This project includes a series of small programs developed in Python to automate some company Excel files. 
+      
+      Most of the automations were made using openpyxl, leveraging every type of functionality, from styling to cell merging. 
+      
+      The UIs were mostly created with Tkinter and PyQT6.`,
   },
+
   bedtime_stories: {
-    name: "Bedtime Stories",
-    description: `Serie di script e piccoli programmi scritti in Python adibiti all'automatizzazione di file Excel aziendali, inclusa lettura di file pdf.`,
-    long_description: `Questo progetto include una serie di piccoli programmi sviluppati in Python per automatizzare alcuni file Excel aziendiali.
-    
-    La maggior parte dellea automazioni sono fatte utilizzando openpyxl, sfruttando ogni tipo di funzionalità, dallo styling al merge delle celle.
-    
-    Le UI sono state realizzate principalmente con Tkinter e PyQT6.`,
+    name: `Bedtime Stories`,
+    description: `Small video game developed in Unity during my academy years together with a group of other students, where I was the only programmer. Feel free to take a look. :)`,
+    long_description: `As the only programmer on the project, I implemented practically every mechanic, from the Character Controller to enemy AI and the dialogue system. I created some shaders, including the one for darkness, and built several tools for tile optimization.`,
   },
 } as const;
 
