@@ -40,7 +40,7 @@ const ProjectListItem = ({
     >
       <h3>{project.name}</h3>
       <p className="text-start">{project.description}</p>
-      <div className="flex gap-3">
+      <div className="flex gap-3 flex-wrap">
         {project.tags.map((tag: string) => (
           <div key={tag} className="bg-bg-200 border px-1 text-xs">
             {tag}
