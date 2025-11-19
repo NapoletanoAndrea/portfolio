@@ -23,8 +23,8 @@ export default function Navbar() {
   const { i18n } = useTranslation();
 
   return (
-    <Container className="flex flex-col">
-      <div className="my-8 flex w-full items-center justify-between">
+    <Container className="flex flex-col my-8">
+      <div className="flex w-full items-center justify-between">
         <div className="flex gap-4">
           <NavLink to={HOME_PATH}>Home</NavLink>
           <NavLink to={ABOUT_PATH}>About me</NavLink>

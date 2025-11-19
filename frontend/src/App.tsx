@@ -18,6 +18,7 @@ import ManualProject from "./features/projects/ManualProject";
 import AutoPythonProject from "./features/projects/AutoPythonProject";
 import BedtimeStoriesProject from "./features/projects/BedtimeStoriesProject";
 import AboutPage from "./features/about/AboutPage";
+import ScrollToTop from "./components/layout/ScrollToTop/ScrollToTop";
 
 const LoginPage = lazy(() => import("./features/auth/login/LoginPage"));
 const StyleSheetPage = lazy(
@@ -38,6 +39,7 @@ export default function App() {
         </div>
       )}
       <HashRouter>
+        <ScrollToTop />
         <AppProvider>
           <Suspense fallback={<></>}>
             <Routes>
