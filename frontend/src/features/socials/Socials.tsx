@@ -11,7 +11,7 @@ export default function Socials() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <LinkedinSVG />
+        <LinkedinSVG className="icon-hover" />
       </Link>
       <Link
         title="Github"
@@ -19,7 +19,7 @@ export default function Socials() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GithubSVG />
+        <GithubSVG className="icon-hover" />
       </Link>
     </div>
   );

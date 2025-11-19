@@ -18,4 +18,8 @@
   .project-scroller {
     @apply flex flex-col gap-8 pb-24;
   }
+
+  .icon-hover {
+    @apply hover:text-bg-300 dark:hover:text-bg-700 transition-colors duration-100;
+  }
 }

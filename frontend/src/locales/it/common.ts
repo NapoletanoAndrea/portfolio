@@ -15,6 +15,14 @@ const common = {
   },
   about: {
     me: `Hi. I'm Andrea, 24, i like coding, technology and videogames.`,
+    education: "Istruzione",
+    it_diploma: "Diploma informatico",
+    game_programming_course: "Corso di Game Programming",
+    work_experience: "Esperienza di lavoro",
+    cmt_date: "Gennaio 2025 - Presente",
+    cmt_work_experience: `* Sviluppo Full Stack
+    * Sviluppo Dekstop - Python & .NET`,
+    tools: "Strumenti che ho usato",
   },
 } as const;
 
