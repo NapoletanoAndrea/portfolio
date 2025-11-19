@@ -30,7 +30,7 @@ export default function App() {
 
   return (
     <>
-      {process.env.NODE_ENV === "development" && (
+      {import.meta.env.PROCESS === "development" && (
         <div className="fixed right-5 bottom-5 z-10 flex flex-col items-end gap-3">
           <DebugBreakpoints />
           <DebugLanguageToggle />

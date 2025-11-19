@@ -5,7 +5,7 @@ import App from "./App.tsx";
 import { ThemeProvider } from "./features/theme/useTheme.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-if (process.env.NODE_ENV === "production") {
+if (import.meta.env.PROCESS === "production") {
   console.log = () => {};
   console.warn = () => {};
   console.error = () => {};
