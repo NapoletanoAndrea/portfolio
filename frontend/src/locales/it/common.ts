@@ -14,7 +14,7 @@ const common = {
     p: "// I write code",
   },
   about: {
-    me: `Hi. I'm Andrea, 24, i like coding, technology and videogames.`,
+    me: `Ciao. Mi chiamo Andrea, ho 24 anni, mi piace la programmazione, la tecnologia e i videgiochi.`,
     education: "Istruzione",
     it_diploma: "Diploma informatico",
     game_programming_course: "Corso di Game Programming",
