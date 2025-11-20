@@ -65,6 +65,16 @@ const projects = {
     description: `Small video game developed in Unity during my academy years together with a group of other students, where I was the only programmer. Feel free to take a look. :)`,
     long_description: `As the only programmer on the project, I implemented practically every mechanic, from the Character Controller to enemy AI and the dialogue system. I created some shaders, including the one for darkness, and built several tools for tile optimization.`,
   },
+  materials_ai: {
+    name: `Materials AI`,
+    description: `Little web application where you can upload an item to a postgres db where the backend will be able to recognize and potentially measure it through Google AI API`,
+    long_description: `Small web application created in collaboration with a friend of mine for his graduation project, in which he took care of the design.
+
+    On this website, if you have the required credentials, you can upload an object that will then be analyzed by an AI model through Google's APIs and subsequently added to a Postgres database.
+
+    The AI will measure the object only if it is placed next to a reference cube, which the AI assumes to be 75x75x75 mm. Otherwise, it will set all measurements to 0, since we noticed that the measurements would not be accurate anyway.`,
+    upload: "Upload page.",
+  },
 } as const;
 
 export default projects;

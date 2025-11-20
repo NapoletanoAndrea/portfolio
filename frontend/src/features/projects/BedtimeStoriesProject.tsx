@@ -19,6 +19,8 @@ export default function BedtimeStoriesProject() {
       </p>
       <div className="mb-24 flex gap-6 self-start">
         <Link
+          target="_blank"
+          rel="noopener noreferrer"
           to="https://drive.google.com/file/d/1rey8pG5HqxEsWlZhgqkhGGrYMz_xbtfF/view"
           className="btn"
         >

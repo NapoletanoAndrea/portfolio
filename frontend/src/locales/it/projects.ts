@@ -64,6 +64,16 @@ const projects = {
     description: `Piccolo videgioco sviluppato su Unity durante i miei anni in accademia assieme ad un gruppo di altri studenti, tra cui io ero l'unico programmatore, date un'occhiata se vi va. :)`,
     long_description: `Essendo l'unico programmatore del progetto, ho implementato praticamente ogni meccanica, dal Character Controller all'IA dei nemici e al sistema di dialogo. Ho creato alcuni shader, incluso quello per l'oscurità, e ho realizzato alcuni strumenti per l'ottimizzazione delle tile.`,
   },
+  materials_ai: {
+    name: `Materials AI`,
+    description: `Piccola applicazione web in cui è possibile caricare un oggetto in un database Postgres, dove il backend sarà in grado di riconoscerlo e, potenzialmente, misurarlo tramite le API di Google AI.`,
+    long_description: `Piccola applicazione web creata in collaborazione con un mio amico per la sua laurea, in cui lui si è occupato del design.
+    
+    Su questo sito è possibile, qualora si disponga delle credenziali per farlo, caricare un oggetto che verrà poi analizzato da un modello AI attraverso API di Google e verrà dopodiché aggiunto ad un database Postgres.
+    
+    L'AI misurerà l'oggetto solo se vicino ad un cubo di riferimento che darà per scontato misuri 75x75x75mm, in caso contrario setterà tutte le dimensioni a 0, dato che abbiamo notato che le misure non sarebbero state accurate in ogni caso.`,
+    upload: "Pagina di caricamento.",
+  },
 } as const;
 
 export default projects;

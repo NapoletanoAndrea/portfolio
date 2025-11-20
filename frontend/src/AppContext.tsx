@@ -38,6 +38,14 @@ export const AppProvider = (props: Props) => {
       category: projectCategories.desktop,
     },
     {
+      path: "materials_ai",
+      name: t("projects:materials_ai.name"),
+      description: t("projects:materials_ai.description"),
+      tags: ["AI", "Django", "React", "Postgresql", "Tailwind"],
+      longDescription: t("projects:materials_ai.long_description"),
+      category: projectCategories.fullStack,
+    },
+    {
       path: "ordermanager",
       name: t("projects:ordermanager.name"),
       description: t("projects:ordermanager.description"),
