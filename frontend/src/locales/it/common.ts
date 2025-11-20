@@ -21,7 +21,7 @@ const common = {
     work_experience: "Esperienza di lavoro",
     cmt_date: "Gennaio 2025 - Presente",
     cmt_work_experience: `* Sviluppo Full Stack
-    * Sviluppo Dekstop - Python & .NET`,
+    * Sviluppo Desktop - Python & .NET`,
     tools: "Strumenti che ho usato",
   },
 } as const;
