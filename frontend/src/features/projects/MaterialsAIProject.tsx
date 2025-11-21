@@ -31,7 +31,7 @@ export default function MaterialsAIProject() {
         <Link
           target="_blank"
           rel="noopener noreferrer"
-          to="https://drive.google.com/file/d/1rey8pG5HqxEsWlZhgqkhGGrYMz_xbtfF/view"
+          to="https://mamacatalogue.com"
           className="btn"
         >
           Website
