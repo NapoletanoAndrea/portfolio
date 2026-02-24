@@ -40,7 +40,7 @@ const projects = {
     
     L'app permette di compilare dei form attraverso i quali potranno inviare ordini direttamente all'azienda, l'azienda desidera mantenere segretezza su come questi ordini vergono fatti, motivo per il quale la registrazione deve essere approvata e per il quale non posso approfondire il funzionamento di questa applicazione.
     
-    L'applicazione è multilingua grazie a react-i18n e a django-translations ed è anche disponibile come app Android grazie a Capacitor (e presto anche iOS).`,
+    L'applicazione è multilingua grazie a react-i18n e a django-translations ed è anche disponibile come app Android e iOS grazie a Capacitor.`,
   },
   webmanual: {
     name: "Manuale Web",
