@@ -5,7 +5,7 @@ import { useProject } from "./hooks/useProject";
 import ProjectContainer from "./components/ProjectContainer";
 import { Link } from "react-router-dom";
 import { ArrowUpRightFromSquare } from "lucide-react";
-import { GithubIcon } from "../../components/svgs";
+// import { GithubIcon } from "../../components/svgs";
 
 export default function MaterialsAIProject() {
   const project = useProject();
@@ -37,7 +37,7 @@ export default function MaterialsAIProject() {
           Website
           <ArrowUpRightFromSquare className="max-w-4" />
         </Link>
-        <Link
+        {/* <Link
           target="_blank"
           rel="noopener noreferrer"
           to="https://github.com/NapoletanoAndrea/materials-db-app"
@@ -45,7 +45,7 @@ export default function MaterialsAIProject() {
         >
           Repo
           <GithubIcon className="max-w-4" />
-        </Link>
+        </Link> */}
       </div>
     </ProjectContainer>
   );

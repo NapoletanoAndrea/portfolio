@@ -38,7 +38,7 @@ const projects = {
       
       The app allows users to fill out forms through which they can send orders directly to the company. The company wants to maintain secrecy about how these orders are made, which is why registration must be approved and why I cannot go into detail about the functioning of this application. 
       
-      The application is multilingual thanks to react-i18n and django-translations, and it is also available as an Android app thanks to Capacitor (and soon iOS).`,
+      The application is multilingual thanks to react-i18n and django-translations, and it is also available as an Android and iOS app thanks to Capacitor.`,
   },
 
   webmanual: {
