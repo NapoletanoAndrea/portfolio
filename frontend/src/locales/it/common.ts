@@ -11,7 +11,7 @@ const common = {
     have_account: "Hai già un account?",
   },
   hero: {
-    p: "// I write code",
+    p: "// Portfolio",
   },
   about: {
     me: `Ciao. Mi chiamo Andrea, ho 24 anni, mi piace la programmazione, la tecnologia e i videgiochi.`,

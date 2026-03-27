@@ -11,7 +11,7 @@ const common = {
     have_account: "Already have an account?",
   },
   hero: {
-    p: "// I write code",
+    p: "// Portfolio",
   },
   about: {
     me: `Hi. I'm Andrea, 24, i like coding, technology and videogames.`,
