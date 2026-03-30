@@ -40,7 +40,7 @@ authApi.interceptors.request.use(
 const getApi = (auth = true): AxiosInstance => (auth ? authApi : api);
 
 const apiCall = async (
-  callMethod: string,
+  callMethod: AxiosRequestConfig["method"],
   {
     path = "",
     key = "",
@@ -61,6 +61,7 @@ const apiCall = async (
     };
     if (data instanceof FormData) {
       config.headers = {
+        ...config.headers,
         "Content-Type": "multipart/form-data",
       };
     }
